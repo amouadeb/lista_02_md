@@ -1,13 +1,24 @@
 1- (b) // p % q === 1 → 10 % 3 === 1 → verdadeiro r * 2 > p → 6 * 2 > 10 → 12 > 10 → verdadeiro q + r < p → 3 + 6 < 10 → 9 < 10 → verdadeiro
+
+
 2- (c) // A diferença entre as funções está no uso de (do...while) e (while) enquanto analisarCredito1() soma os valores antes de verificar a condição,  e so para quando o próximo valor exceder o limite. O saldo final ficaria -200. ja analisarCredito2() verifica a condição antes de somar,  e permite a adicionar um valor extra antes de interromper. O saldo final fica -600.
+
+
 3- (b) // Se idade >= 18  e dade < 60, imprime "Você é um adulto!". Se idade < 18, imprime "Você é menor de idade!". Mas se for  (idade 60 ou mais), imprime "Você está na melhor idade!".
-4- (b) // Dispositivo 1 (300W) → 1200 - 300 = 900 Dispositivo 2 (600W) → Precisa de 600W, tem 900W, então: 900 - 600 = 300 Dispositivo 3 (500W) → Precisa de 500W, só tem 300W, usa bateria extra:Usa 300W da energia restante, sobra 0W Precisa de mais 200W, tira da bateria extra (400 - 200 = 200) Dispositivo 4 (200W) → Precisa de 200W, só tem bateria extra de 200W, mas a energia disponível já é 0, então não liga Dispositivo 5 (400W) → Precisa de 400W, mas só tem 200W da bateria extra, não liga ❌
+
+
+4- (b) // Dispositivo 1 (300W) → 1200 - 300 = 900 Dispositivo 2 (600W) → Precisa de 600W, tem 900W, então: 900 - 600 = 300 Dispositivo 3 (500W) → Precisa de 500W, só tem 300W, usa bateria extra:Usa 300W da energia restante, sobra 0W Precisa de mais 200W, tira da bateria extra (400 - 200 = 200) Dispositivo 4 (200W) → Precisa de 200W, só tem bateria extra de 200W, mas a energia disponível já é 0, então não liga Dispositivo 5 (400W) → Precisa de 400W, mas só tem 200W da bateria extra, não liga 
+
+
 5- (b) // Função update() é feita  a cada frame da exibição do jogo, o que permite a atualização dos objetos, para detectar as possiveis  colisões e a movimentaçoes.
+
+
 6- (a) // O principal modulo em matter.js é o motor de fisica, pois permite simualção de corpos,objetos,perosnagens etc para deixar as animações mais relaistas.
 
 ///Dissertativas
 
 7;
+
 
 var compras = [40.50, 20.50, 10.25, 30.85, 65.90];
 var totalCompras = 0;
@@ -26,6 +37,7 @@ if (totalCompras < 50) {
 }
 
 8;
+
 
 // Classe base Veiculo
 class Veiculo {
@@ -73,6 +85,7 @@ console.log(` O Consumo da moto é : ${moto.calcularConsumo(100)} litros`);
 
 
 9;
+
 
 
 // Variáveis de entrada
