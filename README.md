@@ -1,24 +1,32 @@
-1- (b) // p % q === 1 → 10 % 3 === 1 → verdadeiro r * 2 > p → 6 * 2 > 10 → 12 > 10 → verdadeiro q + r < p → 3 + 6 < 10 → 9 < 10 → verdadeiro
+(b)
+p % q === 1 → 10 % 3 === 1 → verdadeiro
+r * 2 > p → 6 * 2 > 10 → 12 > 10 → verdadeiro
+q + r < p → 3 + 6 < 10 → 9 < 10 → verdadeiro
 
 
-2- (c) // A diferença entre as funções está no uso de (do...while) e (while) enquanto analisarCredito1() soma os valores antes de verificar a condição,  e so para quando o próximo valor exceder o limite. O saldo final ficaria -200. ja analisarCredito2() verifica a condição antes de somar,  e permite a adicionar um valor extra antes de interromper. O saldo final fica -600.
+(c)
+A diferença entre as funções está no uso de do...while e while. Enquanto analisarCredito1() soma os valores antes de verificar a condição e só para quando o próximo valor excede o limite (saldo final: -200), analisarCredito2() verifica a condição antes de somar e permite adicionar um valor extra antes de interromper (saldo final: -600).
 
 
-3- (b) // Se idade >= 18  e dade < 60, imprime "Você é um adulto!". Se idade < 18, imprime "Você é menor de idade!". Mas se for  (idade 60 ou mais), imprime "Você está na melhor idade!".
+(b)
+Se idade >= 18 e idade < 60, imprime "Você é um adulto!". Se idade < 18, imprime "Você é menor de idade!". Mas se for idade >= 60, imprime "Você está na melhor idade!".
 
 
-4- (b) // Dispositivo 1 (300W) → 1200 - 300 = 900 Dispositivo 2 (600W) → Precisa de 600W, tem 900W, então: 900 - 600 = 300 Dispositivo 3 (500W) → Precisa de 500W, só tem 300W, usa bateria extra:Usa 300W da energia restante, sobra 0W Precisa de mais 200W, tira da bateria extra (400 - 200 = 200) Dispositivo 4 (200W) → Precisa de 200W, só tem bateria extra de 200W, mas a energia disponível já é 0, então não liga Dispositivo 5 (400W) → Precisa de 400W, mas só tem 200W da bateria extra, não liga 
+(b)
+Dispositivo 1 (300W) → 1200 - 300 = 900
+Dispositivo 2 (600W) → 900 - 600 = 300
+Dispositivo 3 (500W) → Usa 300W da energia restante, precisa de mais 200W da bateria extra (resta 200W)
+Dispositivo 4 (200W) → Usa os 200W restantes da bateria
+Dispositivo 5 (400W) → Não liga
 
 
-5- (b) // Função update() é feita  a cada frame da exibição do jogo, o que permite a atualização dos objetos, para detectar as possiveis  colisões e a movimentaçoes.
+
+(b)
+A função update() é executada a cada frame do jogo, atualizando os objetos para detectar colisões e movimentações.
 
 
-6- (a) // O principal modulo em matter.js é o motor de fisica, pois permite simualção de corpos,objetos,perosnagens etc para deixar as animações mais relaistas.
-
-///Dissertativas
-
-7;
-
+(a)
+O principal módulo em matter.js é o motor de física, que permite simular corpos, objetos e personagens para deixar as animações mais realistas.
 
 var compras = [40.50, 20.50, 10.25, 30.85, 65.90];
 var totalCompras = 0;
@@ -26,7 +34,7 @@ var totalCompras = 0;
 for (i = 0; i < compras.length; i++) {
     totalCompras += compras[i]; // totalCompras = 168
 }
-console.log(`O preço total de suas compras é R$ ${totalCompras.toFixed(2)}`); // O preço total das  compras é R$ 168.00
+console.log(`O preço total de suas compras é R$ ${totalCompras.toFixed(2)}`); // O preço total das compras é R$ 168.00
 // vai avaliar o frete em relação ao total da compra 
 if (totalCompras < 50) {
     console.log("Frete não disponível!");
@@ -35,10 +43,11 @@ if (totalCompras < 50) {
 } else {
     console.log("Frete grátis!");
 }
+8.
 
-8;
-
-
+javascript
+Copiar
+Editar
 // Classe base Veiculo
 class Veiculo {
     constructor(modelo, ano) {
@@ -76,18 +85,16 @@ class Moto extends Veiculo {
     }
 }
 
-
 var carro = new Carro("Hyundai", 2022, 10);
 console.log(` O Consumo do carro é: ${carro.calcularConsumo(100)} litros`);
 
 var moto = new Moto("Kawasaki", 1990, 20);
 console.log(` O Consumo da moto é : ${moto.calcularConsumo(100)} litros`);
+9.
 
-
-9;
-
-
-
+javascript
+Copiar
+Editar
 // Variáveis de entrada
 var velocidadeInicial = 5000; 
 var velocidadeSegura = 5; 
@@ -103,15 +110,16 @@ while (velocidadeInicial > velocidadeSegura && tempoNecessario < tempoMaximo) {
     tempoNecessario++;
 }
 
-o
 if (velocidadeInicial <= velocidadeSegura) {
     console.log(`Tempo necessário para atingir a velocidade segura de pouso: ${tempoNecessario} segundos`);
 } else {
     console.log("Não foi possível atingir a velocidade segura de pouso dentro do tempo máximo permitido.");
 }
+10.
 
-10;
-
+javascript
+Copiar
+Editar
 // Função para multiplicar as matrizes
 function MultiplicarMatrizesInvestimento(matrizA, matrizB) {
     // Verifica se o número de colunas da matrizA é igual ao número de linhas da matrizB
@@ -151,6 +159,5 @@ var investimentosAno2 = [[1200, 1800], [1300, 2700]];
 var totalInvestimentos = MultiplicarMatrizesInvestimento(investimentosAno1, investimentosAno2);
 console.log("Total de investimentos acumulados:");
 console.log(totalInvestimentos);
-
 
 
